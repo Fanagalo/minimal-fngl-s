@@ -79,10 +79,6 @@ get_header();
 							get_the_title()
 						) );
 
-						wp_link_pages( array(
-							'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'underscores' ),
-							'after'  => '</div>',
-						) );
 						?>
 					</div><!-- .entry-content -->
 
@@ -91,9 +87,7 @@ get_header();
 					</footer><!-- .entry-footer -->
 				</article><!-- #post-<?php the_ID(); ?> -->
 
-
 			<?php
-
 
 			endwhile;
 
